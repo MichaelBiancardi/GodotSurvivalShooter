@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Options.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="ButtonGroup" id=3]
+
+[node name="Options" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="DifficultyLabel" type="Label" parent="."]
+margin_left = 313.001
+margin_top = 33.0001
+margin_right = 630.001
+margin_bottom = 111.0
+rect_pivot_offset = Vector2( -722.4, -76.799 )
+custom_fonts/font = SubResource( 1 )
+text = "Difficulty:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EasyCheckBox" type="CheckBox" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -109.0
+margin_top = 217.0
+margin_right = 45.0
+margin_bottom = 297.0
+custom_fonts/font = SubResource( 2 )
+group = SubResource( 3 )
+text = "Easy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HardCheckBox" type="CheckBox" parent="."]
+margin_left = 406.001
+margin_top = 349.001
+margin_right = 554.001
+margin_bottom = 415.001
+custom_fonts/font = SubResource( 2 )
+group = SubResource( 3 )
+text = "Hard"
+__meta__ = {
+"_edit_use_anchors_": false
+}
